@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+         <script src="/ckeditor/ckeditor.js"></script>
+
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -91,5 +93,9 @@
                 </div>
             </div>
         </div>
+
+        <textarea id = "ok" name = "ok" rows="4" cols="50" ></textarea>
     </body>
+
+    {{--  <script> CKEDITOR.replace( 'ok' ); </script>  --}}
 </html>
