@@ -22,8 +22,14 @@ Route::get('/filemanager', function () {
 Route::get('/editor', function () {
     return view('editor');
 });
+
+Route::get('/example', function () {
+    return view('example');
+});
 // Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
 //     '\vendor\uniSharp\LaravelFilemanager\Lfm::routes()';});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/example', 'chart@chartjs');

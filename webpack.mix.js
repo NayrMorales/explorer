@@ -13,3 +13,12 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.copy('vendor/ckeditor/ckeditor/ckeditor.js', 'resources/assets/js/libs/ckeditor.js');
+
+mix.scripts([
+    'app.js'
+    ], 'html/js/app.min.js')
+.scripts([
+        'libs/ckeditor.js',
+], 'html/js/app.min.js')
